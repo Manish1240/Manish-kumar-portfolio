@@ -1,12 +1,15 @@
-import React from 'react'
-import Landingpage  from './Components/Landingpage'
-import { motion } from 'framer-motion';
+import LandingPage from "./components/LandingPage";
+import { Toaster } from 'react-hot-toast';
 function App() {
   return (
-    <> 
-   <Landingpage />
+    <>
+    <Toaster />
+    <div className="min-h-screen font-sans bg-[#0a192f] text-white">
+      <LandingPage />
+    </div>
     </>
-  )
+  
+  );
 }
 
-export default App
+export default App;

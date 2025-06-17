@@ -3,40 +3,55 @@ import { motion } from 'framer-motion';
 
 function Skills() {
   const skills = [
-    { name: "C-lang", icon: '/c.png' },
+    { name: "C Language", icon: '/c.png' },
     { name: 'HTML5', icon: '/html.png' },
     { name: 'CSS3', icon: '/css.png' },
-    { name: 'TailwindCSS', icon: '/tailwindcss.png' },
+    { name: 'Tailwind CSS', icon: '/tailwindcss.png' },
     { name: 'JavaScript', icon: '/javascript.png' },
-    { name: 'React', icon: '/react.png' },
+    { name: 'React.js', icon: '/react.png' },
     { name: 'Framer Motion', icon: '/framer-motion.png' },
-    { name: 'GSAP Animations', icon: '/gsap.png' },
-    { name: 'Git Tool', icon: '/git.png' },
+    { name: 'GSAP', icon: '/gsap.png' },
+    { name: 'Git', icon: '/git.png' },
     { name: 'GitHub', icon: '/github.png' }
   ];
+
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { staggerChildren: 0.15, delayChildren: 0.2 }
+    }
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 30 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } }
+  };
 
   return (
     <motion.div
       className="px-4 py-12 flex flex-col gap-8 lg:pt-20 bg-[#0a192f] text-white"
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: 'easeOut' }}
+      variants={container}
+      initial="hidden"
+      whileInView="show"
       viewport={{ once: true }}
     >
       <h2 className="text-3xl font-bold text-center">Skills</h2>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+      <motion.div
+        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-5xl mx-auto"
+        variants={container}
+      >
         {skills.map((skill, id) => (
           <motion.div
             key={id}
+            variants={item}
             className="relative flex flex-col items-center justify-center bg-[#112240] p-4 rounded-xl overflow-hidden transition-all duration-300 group cursor-pointer"
             whileHover={{ scale: 1.07 }}
             whileTap={{ scale: 0.95, rotate: -1 }}
-            transition={{ type: "spring", stiffness: 300, damping: 15 }}
+            transition={{ type: 'spring', stiffness: 300, damping: 15 }}
           >
-            {/* Glow Effect on Hover */}
-            <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 blur-xl transition duration-300 z-0"></div>
-
+            <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 blur-xl transition duration-300 z-0" />
             <img
               src={skill.icon}
               alt={skill.name}
@@ -47,7 +62,7 @@ function Skills() {
             </p>
           </motion.div>
         ))}
-      </div>
+      </motion.div>
     </motion.div>
   );
 }

@@ -3,36 +3,43 @@ import { motion } from 'framer-motion';
 
 function Projects() {
   const projects = [
+  
+    {
+      title: "Product Store",
+      image: "/product_store.png",
+      description: "This project is based on basic crud operations of mongodb and smooth and cool animations with frammer motion",
+      tech: ['MERN','tailwindcss', 'Frammer_motion'],
+      demoLink: "https://product-store-production-8870.up.railway.app/products",
+      codeLink: "https://github.com/Manish1240/Product-Store.git"
+    },
     {
       title: "Modern Animated Website",
       image: "/project1.png",
-      description: "A modern, animated portfolio website built for large devices using HTML, CSS, JavaScript, GSAP, and slider.js.",
+      description: "A modern, animated portfolio website built using HTML, CSS, JavaScript, GSAP, and slider.js.",
       tech: ['HTML', 'CSS', 'JavaScript', 'GSAP', 'Slider.js'],
       demoLink: "https://manish1240.github.io/Fully-Animated-and-responsive-website/",
-      codeLink: "https://github.com/Manish1240/Fully-Animated-and-responsive-website/"
+      codeLink: "https://github.com/Manish1240/Fully-Animated-and-responsive-website.git"
     },
     {
-      title: "Cynthia Ugwu portfolio",
+      title: "Cynthia Ugwu Portfolio",
       image: "/project2.png",
-      description: "A modern, animated portfolio website built for large device only cause i used hover animations mostly and pointer animations which works on pc and laptops",
-      tech: ['HTML', 'CSS', 'JavaScript', 'GSAP', 'locomotive.js'],
+      description: "A visually engaging desktop portfolio with hover and pointer animations using GSAP and Locomotive.js.",
+      tech: ['HTML', 'CSS', 'JavaScript', 'GSAP', 'Locomotive.js'],
       demoLink: "https://manish1240.github.io/Cynthia-ugwu-portfolio-web/",
-      codeLink: "https://github.com/Manish1240/Cynthia-ugwu-portfolio-web"
+      codeLink: "https://github.com/Manish1240/Cynthia-ugwu-portfolio-web.git"
     },
     {
-      title: "ROCK-PAPER-SESSIOR-GAME",
-      image: "/project3.png",
-      description: "this game project for understanding the some good concepts of javascript like random numbers and best practice of arrays as usuall",
-      tech: ['HTML', 'CSS', 'JavaScript'],
-      demoLink: "https://manish1240.github.io/rock-paper-sessior-game/",
-      codeLink: "https://github.com/Manish1240/rock-paper-sessior-game"
+      title: "Task Management App",
+      image: "/project4.png",
+      description: "A React-based task management app. Use credentials like Admin1240@gmail.com (password: Admin1240) to test.",
+      tech: ['React', 'TailwindCSS'],
+      demoLink: "https://manish1240.github.io/react-task-management-app/",
+      codeLink: "https://github.com/Manish1240/react-task-management-app"
     }
-    // Add more projects here when ready
   ];
-
   return (
     <motion.div
-      className="text-white py-10 px-4 lg:px-0"
+      className="text-white py-12 px-4 sm:px-6"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -40,7 +47,7 @@ function Projects() {
     >
       <h2 className="text-3xl font-bold text-center mb-10">Projects</h2>
 
-      <div className="grid gap-8 max-w-5xl mx-auto">
+      <div className="grid gap-8 max-w-4xl mx-auto grid-cols-1">
         {projects.map((project, index) => (
           <motion.div
             key={index}
@@ -50,7 +57,7 @@ function Projects() {
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-64 object-cover rounded-lg mb-4 border border-[#233554]"
+              className="w-full h-52 sm:h-64 object-cover rounded-lg mb-4 border border-[#233554]"
             />
             <h3 className="text-2xl font-semibold mb-2 group-hover:text-teal-400 transition">
               {project.title}
@@ -66,21 +73,11 @@ function Projects() {
                 </span>
               ))}
             </div>
-            <div className="flex gap-4">
-              <a
-                href={project.demoLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-teal-400 hover:underline"
-              >
+            <div className="flex gap-4 text-sm">
+              <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline">
                 Live Demo
               </a>
-              <a
-                href={project.codeLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-teal-400 hover:underline"
-              >
+              <a href={project.codeLink} target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline">
                 Source Code
               </a>
             </div>
