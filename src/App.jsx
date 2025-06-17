@@ -1,4 +1,4 @@
-import LandingPage from "./Components/LandingPage";
+import LandingPage from "./components/LandingPage";
 import { Toaster } from 'react-hot-toast';
 function App() {
   return (
