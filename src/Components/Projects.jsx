@@ -3,18 +3,17 @@ import { motion } from 'framer-motion';
 
 function Projects() {
   const projects = [
-  
     {
       title: "Product Store",
-      image: "/product_store.png",
-      description: "This project is based on basic crud operations of mongodb and smooth and cool animations with frammer motion",
-      tech: ['MERN','tailwindcss', 'Frammer_motion'],
+      image: "/Manish-kumar-portfolio/product_store.png",
+      description: "This project is based on basic CRUD operations of MongoDB with smooth and cool animations using Framer Motion.",
+      tech: ['MERN', 'TailwindCSS', 'Framer Motion'],
       demoLink: "https://product-store-production-8870.up.railway.app/products",
       codeLink: "https://github.com/Manish1240/Product-Store.git"
     },
     {
       title: "Modern Animated Website",
-      image: "/project1.png",
+      image: "/Manish-kumar-portfolio/project1.png",
       description: "A modern, animated portfolio website built using HTML, CSS, JavaScript, GSAP, and slider.js.",
       tech: ['HTML', 'CSS', 'JavaScript', 'GSAP', 'Slider.js'],
       demoLink: "https://manish1240.github.io/Fully-Animated-and-responsive-website/",
@@ -22,7 +21,7 @@ function Projects() {
     },
     {
       title: "Cynthia Ugwu Portfolio",
-      image: "/project2.png",
+      image: "/Manish-kumar-portfolio/project2.png",
       description: "A visually engaging desktop portfolio with hover and pointer animations using GSAP and Locomotive.js.",
       tech: ['HTML', 'CSS', 'JavaScript', 'GSAP', 'Locomotive.js'],
       demoLink: "https://manish1240.github.io/Cynthia-ugwu-portfolio-web/",
@@ -30,13 +29,14 @@ function Projects() {
     },
     {
       title: "Task Management App",
-      image: "/project4.png",
+      image: "/Manish-kumar-portfolio/project4.png",
       description: "A React-based task management app. Use credentials like Admin1240@gmail.com (password: Admin1240) to test.",
       tech: ['React', 'TailwindCSS'],
       demoLink: "https://manish1240.github.io/react-task-management-app/",
       codeLink: "https://github.com/Manish1240/react-task-management-app"
     }
   ];
+
   return (
     <motion.div
       className="text-white py-12 px-4 sm:px-6"
