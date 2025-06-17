@@ -3,16 +3,16 @@ import { motion } from 'framer-motion';
 
 function Skills() {
   const skills = [
-    { name: "C Language", icon: '/c.png' },
-    { name: 'HTML5', icon: '/html.png' },
-    { name: 'CSS3', icon: '/css.png' },
-    { name: 'Tailwind CSS', icon: '/tailwindcss.png' },
-    { name: 'JavaScript', icon: '/javascript.png' },
-    { name: 'React.js', icon: '/react.png' },
-    { name: 'Framer Motion', icon: '/framer-motion.png' },
-    { name: 'GSAP', icon: '/gsap.png' },
-    { name: 'Git', icon: '/git.png' },
-    { name: 'GitHub', icon: '/github.png' }
+    { name: "C Language", icon: '/Manish-kumar-portfolio/c.png' },
+    { name: 'HTML5', icon: '/Manish-kumar-portfolio/html.png' },
+    { name: 'CSS3', icon: '/Manish-kumar-portfolio/css.png' },
+    { name: 'Tailwind CSS', icon: '/Manish-kumar-portfolio/tailwindcss.png' },
+    { name: 'JavaScript', icon: '/Manish-kumar-portfolio/javascript.png' },
+    { name: 'React.js', icon: '/Manish-kumar-portfolio/react.png' },
+    { name: 'Framer Motion', icon: '/Manish-kumar-portfolio/framer-motion.png' },
+    { name: 'GSAP', icon: '/Manish-kumar-portfolio/gsap.png' },
+    { name: 'Git', icon: '/Manish-kumar-portfolio/git.png' },
+    { name: 'GitHub', icon: '/Manish-kumar-portfolio/github.png' }
   ];
 
   const container = {
