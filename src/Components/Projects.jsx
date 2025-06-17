@@ -2,10 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 function Projects() {
+  const baseUrl = import.meta.env.BASE_URL;
+
   const projects = [
     {
       title: "Product Store",
-      image: "/Manish-kumar-portfolio/product_store.png",
+      image: `${baseUrl}product_store.png`,
       description: "This project is based on basic CRUD operations of MongoDB with smooth and cool animations using Framer Motion.",
       tech: ['MERN', 'TailwindCSS', 'Framer Motion'],
       demoLink: "https://product-store-production-8870.up.railway.app/products",
@@ -13,7 +15,7 @@ function Projects() {
     },
     {
       title: "Modern Animated Website",
-      image: "/Manish-kumar-portfolio/project1.png",
+      image: `${baseUrl}project1.png`,
       description: "A modern, animated portfolio website built using HTML, CSS, JavaScript, GSAP, and slider.js.",
       tech: ['HTML', 'CSS', 'JavaScript', 'GSAP', 'Slider.js'],
       demoLink: "https://manish1240.github.io/Fully-Animated-and-responsive-website/",
@@ -21,7 +23,7 @@ function Projects() {
     },
     {
       title: "Cynthia Ugwu Portfolio",
-      image: "/Manish-kumar-portfolio/project2.png",
+      image: `${baseUrl}project2.png`,
       description: "A visually engaging desktop portfolio with hover and pointer animations using GSAP and Locomotive.js.",
       tech: ['HTML', 'CSS', 'JavaScript', 'GSAP', 'Locomotive.js'],
       demoLink: "https://manish1240.github.io/Cynthia-ugwu-portfolio-web/",
@@ -29,7 +31,7 @@ function Projects() {
     },
     {
       title: "Task Management App",
-      image: "/Manish-kumar-portfolio/project4.png",
+      image: `${baseUrl}project4.png`,
       description: "A React-based task management app. Use credentials like Admin1240@gmail.com (password: Admin1240) to test.",
       tech: ['React', 'TailwindCSS'],
       demoLink: "https://manish1240.github.io/react-task-management-app/",
