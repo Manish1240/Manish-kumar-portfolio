@@ -6,4 +6,5 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(),
   ],
+  base: '/Manish-kumar-portfolio/',
 })
