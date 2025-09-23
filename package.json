@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Manish1240.github.io/Manish-kumar-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

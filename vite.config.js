@@ -3,8 +3,9 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  plugins: [react(),
+  plugins: [
+    react(),
     tailwindcss(),
   ],
-  base: '/Manish-kumar-portfolio/',
+  base: '/animated-website-thorugh-react-js/', // <-- must match repo name
 })
