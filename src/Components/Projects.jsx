@@ -3,15 +3,22 @@ import { motion } from 'framer-motion';
 
 function Projects() {
   const baseUrl = import.meta.env.BASE_URL;
-
   const projects = [
     {
-      title: "Product Store",
+      title: "Product Store AdminPage",
       image: `${baseUrl}product_store.png`,
       description: "This project is based on basic CRUD operations of MongoDB with smooth and cool animations using Framer Motion.",
-      tech: ['MERN', 'TailwindCSS', 'Framer Motion'],
-      demoLink: "https://product-store-production-8870.up.railway.app/products",
-      codeLink: "https://github.com/Manish1240/Product-Store.git"
+      tech: ['React', 'TailwindCSS', 'Framer Motion'],
+      demoLink: "https://product-store-admin.vercel.app/",
+      codeLink: "https://github.com/Manish1240/Product-Store-AdminPage"
+    },
+    {
+      title: "Task Management WebApp",
+      image: `${baseUrl}project4.png`,
+      description: "A React-based task management app. Use credentials like Admin1240@gmail.com (password: Admin1240) to test.",
+      tech: ['React', 'TailwindCSS'],
+      demoLink: "https://task-management-webapp-nine.vercel.app/",
+      codeLink: "https://github.com/Manish1240/Task_management_webapp"
     },
     {
       title: "Modern Animated Website",
@@ -29,14 +36,6 @@ function Projects() {
       demoLink: "https://manish1240.github.io/Cynthia-ugwu-portfolio-web/",
       codeLink: "https://github.com/Manish1240/Cynthia-ugwu-portfolio-web.git"
     },
-    {
-      title: "Task Management App",
-      image: `${baseUrl}project4.png`,
-      description: "A React-based task management app. Use credentials like Admin1240@gmail.com (password: Admin1240) to test.",
-      tech: ['React', 'TailwindCSS'],
-      demoLink: "https://manish1240.github.io/react-task-management-app/",
-      codeLink: "https://github.com/Manish1240/react-task-management-app"
-    }
   ];
 
   return (
