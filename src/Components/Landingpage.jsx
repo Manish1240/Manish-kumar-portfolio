@@ -4,10 +4,13 @@ import About from './About';
 import Skills from './Skills';
 import Projects from './Projects';
 import MessageForm from './MessageForm';
+import MobileMenu from './MobileMenu';
 
 const Landingpage = () => {
   return (
     <>
+    
+    <MobileMenu/>
 <div className="w-full min-h-screen flex flex-col lg:flex-row bg-[#0a192f] text-white">
 {/* Left Side - Fixed on large screens */}
 <motion.div

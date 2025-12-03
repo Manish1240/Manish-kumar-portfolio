@@ -40,13 +40,14 @@ function Projects() {
 
   return (
     <motion.div
+  
       className="text-white py-12 px-4 sm:px-6"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
       viewport={{ once: true }}
     >
-      <h2 className="text-3xl font-bold text-center mb-10">Projects</h2>
+      <h2 id='projects' className="text-3xl font-bold text-center mb-10">Projects</h2>
 
       <div className="grid gap-8 max-w-4xl mx-auto grid-cols-1">
         {projects.map((project, index) => (
