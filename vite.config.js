@@ -7,5 +7,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/animated-website-thorugh-react-js/', // <-- must match repo name
+  base: '/' // <-- must match repo name
 })
