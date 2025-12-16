@@ -25,7 +25,7 @@ function Projects() {
       image: `${baseUrl}project1.png`,
       description: "A modern, animated portfolio website built using HTML, CSS, JavaScript, GSAP, and slider.js.",
       tech: ['HTML', 'CSS', 'JavaScript', 'GSAP', 'Slider.js'],
-      demoLink: "https://manish1240.github.io/Fully-Animated-and-responsive-website/",
+      demoLink: "https://sundown-clone-peach.vercel.app/",
       codeLink: "https://github.com/Manish1240/Fully-Animated-and-responsive-website.git"
     },
     {
