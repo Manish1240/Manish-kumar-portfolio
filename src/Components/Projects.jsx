@@ -5,6 +5,14 @@ function Projects() {
   const baseUrl = import.meta.env.BASE_URL;
   const projects = [
     {
+      title: "Itune Music Web App",
+      image: `${baseUrl}Itune-music.png`,
+      description: "A music clone created for master the most concepts of react like state-Management,loader,react-router-dom etc",
+      tech: ['react','bootsrap','Redux toolkit'],
+      demoLink: "https://itune-music.vercel.app/",
+      codeLink: "https://github.com/Manish1240/Itune-Music"
+    },
+    {
       title: "Product Store AdminPage",
       image: `${baseUrl}product_store.png`,
       description: "This project is based on basic CRUD operations of MongoDB with smooth and cool animations using Framer Motion.",
@@ -36,6 +44,7 @@ function Projects() {
       demoLink: "https://manish1240.github.io/Cynthia-ugwu-portfolio-web/",
       codeLink: "https://github.com/Manish1240/Cynthia-ugwu-portfolio-web.git"
     },
+    
   ];
 
   return (
