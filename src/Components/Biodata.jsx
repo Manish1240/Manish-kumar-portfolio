@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaTwitter, FaFacebook } from 'react-icons/fa';
 import { Code2, FolderGit2, Mail } from 'lucide-react'; // icons for Skills, Projects, Contact
+import TextType from './TextType';
 
 function Biodata() {
   return (
@@ -12,7 +13,14 @@ function Biodata() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Hi, I'm Manish Kumar
+        <TextType 
+  text={["Hi, I'm Manish Kumar"]}
+  typingSpeed={75}
+  pauseDuration={1500}
+  showCursor={true}
+  cursorCharacter="|"
+/>
+
       </motion.h1>
 
       <motion.p

@@ -6,6 +6,7 @@ import Projects from './Projects';
 import MessageForm from './MessageForm';
 import MobileMenu from './MobileMenu';
 
+
 const Landingpage = () => {
   return (
     <>
@@ -45,6 +46,7 @@ transition={{ duration: 1.4, delay: 0.2 }}
 viewport={{ once: true }}
 >
 <Skills />
+
 </motion.div>
 
 <motion.div
