@@ -29,21 +29,14 @@ function Projects() {
       codeLink: "https://github.com/Manish1240/Task_management_webapp"
     },
     {
-      title: "Modern Animated Website",
-      image: `${baseUrl}project1.png`,
-      description: "A modern, animated portfolio website built using HTML, CSS, JavaScript, GSAP, and slider.js.",
-      tech: ['HTML', 'CSS', 'JavaScript', 'GSAP', 'Slider.js'],
-      demoLink: "https://sundown-clone-peach.vercel.app/",
-      codeLink: "https://github.com/Manish1240/Fully-Animated-and-responsive-website.git"
+      title: "Todo App Backend Included",
+      image: `${baseUrl}project4.png`,
+      description: "A React-based task management app. Use credentials like Admin1240@gmail.com (password: Admin1240) to test.",
+      tech: ['React', 'TailwindCSS'],
+      demoLink: "https://task-management-webapp-nine.vercel.app/",
+      codeLink: "https://github.com/Manish1240/Task_management_webapp"
     },
-    {
-      title: "Cynthia Ugwu Portfolio",
-      image: `${baseUrl}project2.png`,
-      description: "A visually engaging desktop portfolio with hover and pointer animations using GSAP and Locomotive.js.",
-      tech: ['HTML', 'CSS', 'JavaScript', 'GSAP', 'Locomotive.js'],
-      demoLink: "https://manish1240.github.io/Cynthia-ugwu-portfolio-web/",
-      codeLink: "https://github.com/Manish1240/Cynthia-ugwu-portfolio-web.git"
-    },
+    
     
   ];
 
