@@ -30,11 +30,11 @@ function Projects() {
     },
     {
       title: "Todo App Backend Included",
-      image: `${baseUrl}project4.png`,
-      description: "A React-based task management app. Use credentials like Admin1240@gmail.com (password: Admin1240) to test.",
-      tech: ['React', 'TailwindCSS'],
-      demoLink: "https://task-management-webapp-nine.vercel.app/",
-      codeLink: "https://github.com/Manish1240/Task_management_webapp"
+      image: `${baseUrl}todoBackend.png`,
+      description: "A React-based CRUD, operations based webapp, connected with backend Rest api and Mongodb",
+      tech: ['React', 'redux-toolkit','express-js','Mongodb'],
+      demoLink: "https://todo-app-frontend-ko2xp0fvj-manish-sonwanis-projects.vercel.app/",
+      codeLink: "https://github.com/Manish1240/todo-app-frontend"
     },
     
     
